@@ -71,10 +71,6 @@ BrainDraft follows the MVVM (Model-View-ViewModel) architecture for a clean and 
 
 Feel free to contribute to the project by opening issues or submitting pull requests. Your feedback and contributions are highly appreciated!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 **BrainDraft - Your Content Magnetizer**
