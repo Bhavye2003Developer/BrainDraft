@@ -7,12 +7,32 @@
 BrainDraft is an Android app designed to effortlessly generate high-quality content for social media. Harnessing the power of OpenAI's fine-tuned GPT-3.5 model, BrainDraft simplifies content creation by allowing users to input a topic, prompting the model to generate captivating content that will magnetize your audience.
 
 ## Getting Started
+# BrainDraft - Your Content Magnetizer
 
-1. **Open the project in Android Studio.**
+BrainDraft is an Android app designed to effortlessly generate high-quality content for social media using OpenAI's fine-tuned GPT-3.5 model. It simplifies content creation by allowing users to input a topic, prompting the model to generate captivating content that will magnetize your audience.
 
-2. **Obtain an API key from [OpenAI](https://beta.openai.com/signup/)** and replace `YOUR_API_KEY` in `GptApiService.kt` with your key.
+![BrainDraft Logo](https://github.com/Bhavye2003Developer/BrainDraft/assets/110657263/661b4250-fba0-46f3-b4ce-b9f9d84202a2)
 
-3. **Build and run the app on your Android device or emulator.**
+## Getting Started
+
+1. **Clone the project:**
+   - Open a terminal or command prompt and run the following command to clone the project:
+
+     ```bash
+     git clone https://github.com/Bhavye2003Developer/BrainDraft.git
+     ```
+
+2. **Open the project in Android Studio:**
+   - Launch Android Studio and open the cloned project by selecting the `build.gradle` file.
+
+3. **Obtain an API key from [OpenAI](https://beta.openai.com/signup/):**
+   - Sign up for an OpenAI account and obtain an API key.
+   - Replace `YOUR_API_KEY` in `GptApiService.kt` with your actual API key.
+
+   ```kotlin
+   const val OPENAI_API_KEY = "YOUR_API_KEY"
+
+4. **Build and run the app on your Android device or emulator.**
 
 ## Architecture
 
