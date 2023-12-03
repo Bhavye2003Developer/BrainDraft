@@ -35,6 +35,10 @@ BrainDraft is an Android app designed to effortlessly generate high-quality cont
 
 4. **Build and run the app on your Android device or emulator.**
 
+
+https://github.com/Bhavye2003Developer/BrainDraft/assets/110657263/ae6cb36f-d069-4cd5-aef5-e1138baa47b0
+   
+
 ## Architecture
 
 BrainDraft follows the MVVM (Model-View-ViewModel) architecture for a clean and modular codebase. The key components include:
