@@ -54,6 +54,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 **BrainDraft - Your Content Magnetizer**
 
-For any inquiries, please contact [your-email@example.com](mailto:your-email@example.com). Connect with us on [Twitter](https://twitter.com/YourTwitterHandle) and [Instagram](https://www.instagram.com/YourInstagramHandle/).
+For any inquiries, please contact [bhavyedevelopment2003@gmail.com](mailto:bhavyedevelopment2003@gmail.com)
 
 Thank you for choosing BrainDraft! Happy content creation!
