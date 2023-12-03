@@ -1,5 +1,6 @@
 package com.example.braindraft.fragments
 
+import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -32,7 +33,7 @@ class PromptInputFragment : Fragment() {
 
         binding.btnGenerateContent.setOnClickListener {
             val prompt = binding.prompt.editableText.toString()
-            viewModel.getContent(prompt, true)
+            viewModel.getContent(prompt)
             binding.progressBar.visibility = View.VISIBLE
         }
 
@@ -57,6 +58,9 @@ class PromptInputFragment : Fragment() {
             binding.contentEdit.visibility = View.GONE
             binding.btnShare.isEnabled = true
             binding.btnEdit.isEnabled = true
+            val fadeInAnimator = ObjectAnimator.ofFloat(binding.btnSave, View.ALPHA, 0f, 1f)
+            fadeInAnimator.duration = 500
+            fadeInAnimator.start()
         }
 
         binding.btnShare.setOnClickListener {

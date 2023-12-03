@@ -14,7 +14,7 @@ import retrofit2.http.POST
 import java.util.concurrent.TimeUnit
 
 
-const val OPENAI_API_KEY = "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"
+const val OPENAI_API_KEY = "YOUR_API_KEY"
 const val BASE_URL = "https://api.openai.com/"
 
 
@@ -39,21 +39,19 @@ var retrofit: Retrofit = Retrofit.Builder()
 object GptApiService {
     private val service = retrofit.create(GptService::class.java)
 
-    fun getStory(topic: String): Call<GptResponse> {
-        val gptPrompt = Prompt.getStoryPrompt(topic)
-        val body = getBody(gptPrompt)
-        Log.d("testing", "body -> $body")
-        return service.getContent(body)
-    }
-
     fun getContent(prompt: String): Call<GptResponse> {
         val gptPrompt = Prompt.getContentPrompt(prompt)
-        val body = getBody(gptPrompt)
+        val body =
+            "{\n" +
+                    "  \"model\": \"gpt-3.5-turbo\",\n" +
+                    "  \"messages\": [\n" +
+                    "    {\n" +
+                    "      \"role\": \"system\",\n" +
+                    "      \"content\": \"${gptPrompt}\"\n" +
+                    "    }\n" +
+                    "  ]\n" +
+                    "}\n"
         Log.d("testing", "body -> $body")
         return service.getContent(body)
-    }
-
-    private fun getBody(userInput: String): String {
-        return "{\"model\": \"gpt-3.5-turbo\",\"messages\": [{\"role\": \"system\",\"content\": \"${userInput}\" }]}"
     }
 }

@@ -11,16 +11,9 @@
         <action
             android:id="@+id/action_home2_to_promptInputFragment"
             app:destination="@id/promptInputFragment" />
-        <action
-            android:id="@+id/action_home2_to_storyGenerateFragment"
-            app:destination="@id/storyGenerateFragment" />
     </fragment>
     <fragment
         android:id="@+id/promptInputFragment"
         android:name="com.example.braindraft.fragments.PromptInputFragment"
         android:label="PromptInputFragment" />
-    <fragment
-        android:id="@+id/storyGenerateFragment"
-        android:name="com.example.braindraft.fragments.StoryGenerateFragment"
-        android:label="StoryGenerateFragment" />
 </navigation>

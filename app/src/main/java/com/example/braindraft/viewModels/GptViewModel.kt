@@ -15,15 +15,9 @@ class GptViewModel : ViewModel() {
     val gptResponse: LiveData<String>
         get() = _gptResponse
 
-    fun getContent(prompt: String, isGenerateContent: Boolean) {
+    fun getContent(prompt: String) {
         Log.d("testing", "p -> $prompt")
-        val service: Call<GptResponse> = if (isGenerateContent) {
-            // content generation
-            GptApiService.getContent(prompt)
-        } else {
-            // story generation
-            GptApiService.getStory(prompt)
-        }
+        val service: Call<GptResponse> = GptApiService.getContent(prompt)
         service.enqueue(object : Callback<GptResponse?> {
             override fun onResponse(
                 call: Call<GptResponse?>,

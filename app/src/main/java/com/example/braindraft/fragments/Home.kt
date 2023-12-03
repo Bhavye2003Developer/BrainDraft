@@ -27,11 +27,6 @@ class Home : Fragment() {
             val action = HomeDirections.actionHome2ToPromptInputFragment()
             navigate(action)
         }
-
-        binding.btnStoryGenerator.setOnClickListener {
-            val action = HomeDirections.actionHome2ToStoryGenerateFragment()
-            navigate(action)
-        }
     }
 
     private fun navigate(action: NavDirections) {
