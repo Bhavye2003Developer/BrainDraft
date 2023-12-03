@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    for light theme -->
+    <color name="colorBackgroundLight">#FFFFFF</color>
+    <color name="colorOnBackgroundLight">#000000</color>
+    <color name="colorSecondaryLight">#757575</color>
+    <color name="colorPrimaryLight">#2196F3</color>
+    <color name="colorOnPrimaryLight">#FFFFFF</color>
+
+    <!--    for dark theme -->
+    <color name="colorBackgroundDark">#121212</color>
+    <color name="colorOnBackgroundDark">#FFFFFF</color>
+    <color name="colorSecondaryDark">#B0B0B0</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorOnPrimaryDark">#FFFFFF</color>
+</resources>
