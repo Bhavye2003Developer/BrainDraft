@@ -27,7 +27,7 @@ BrainDraft is an Android app designed to effortlessly generate high-quality cont
 
 3. **Obtain an API key from [OpenAI](https://beta.openai.com/signup/):**
    - Sign up for an OpenAI account and obtain an API key.
-   - Replace `YOUR_API_KEY` in `GptApiService.kt` with your actual API key.
+   - Replace `YOUR_API_KEY` in `app/src/main/java/com/example/braindraft/network/gpt/GptApiService.kt` with your actual API key.
 
 
    ```kotlin
